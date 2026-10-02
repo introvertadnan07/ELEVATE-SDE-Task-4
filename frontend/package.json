@@ -1,0 +1,7 @@
+{
+  "name": "elevate-sde-task-2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CredVault certificate issuing and verification frontend prototype",
+  "scripts": {"start":"python3 -m http.server 4173","dev":"python3 -m http.server 4173"}
+}

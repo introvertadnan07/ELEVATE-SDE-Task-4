@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Request Certificate | CredVault</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <header class="topbar">
+
+        <a class="brand" href="../index.html">
+            <div class="brand-mark">CV</div>
+
+            <div>
+                <strong>CredVault</strong>
+                <span>Certificate Issuing & Verification</span>
+            </div>
+        </a>
+
+        <nav>
+            <a href="../index.html">
+                ⌂ Home
+            </a>
+
+            <a class="nav-active" href="request.html">
+                ▣ Request Certificate
+            </a>
+
+            <a href="track.html">
+                ⌕ Track Application
+            </a>
+
+            <a href="verify.html">
+                ✓ Verify Certificate
+            </a>
+        </nav>
+
+        <a class="admin-link" href="admin-login.html">
+            Admin
+        </a>
+
+    </header>
+
+
+    <main>
+
+        <div class="narrow">
+
+            <div class="page-head">
+
+                <div>
+                    <div class="eyebrow">
+                        CITIZEN SERVICES
+                    </div>
+
+                    <h1>
+                        Request Certificate
+                    </h1>
+
+                    <p>
+                        Submit your details to request a digital certificate.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <section class="card">
+
+                <form id="requestForm">
+
+                    <div class="form-grid">
+
+                        <label class="field">
+                            <span>Name</span>
+
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Enter your full name"
+                            >
+                        </label>
+
+
+                        <label class="field">
+                            <span>Phone</span>
+
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="10-digit mobile number"
+                            >
+                        </label>
+
+
+                        <label class="field">
+
+                            <span>Gender</span>
+
+                            <div class="radio-row">
+
+                                <label class="radio">
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="Male"
+                                    >
+                                    Male
+                                </label>
+
+                                <label class="radio">
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="Female"
+                                    >
+                                    Female
+                                </label>
+
+                                <label class="radio">
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="Other"
+                                    >
+                                    Other
+                                </label>
+
+                            </div>
+
+                        </label>
+
+
+                        <label class="field">
+
+                            <span>City</span>
+
+                            <input
+                                type="text"
+                                name="city"
+                                placeholder="Enter your city"
+                            >
+
+                        </label>
+
+
+                        <label class="field">
+
+                            <span>State</span>
+
+                            <select name="state" id="stateSelect">
+
+                                <option value="">
+                                    Select state
+                                </option>
+
+                            </select>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="form-foot">
+
+                        <p>
+                            ✓ Your information is used only for certificate
+                            processing.
+                        </p>
+
+                        <button class="btn" type="submit">
+                            Submit Request
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        © 2026 CredVault · Certificate Issuing & Verification Platform
+    </footer>
+
+</div>
+
+
+<script src="../js/data.js"></script>
+<script src="../js/request.js"></script>
+
+</body>
+</html>

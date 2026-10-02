@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificates | CredVault Admin</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <header class="topbar">
+
+        <a class="brand" href="../index.html">
+
+            <div class="brand-mark">
+                CV
+            </div>
+
+            <div>
+                <strong>CredVault</strong>
+                <span>Certificate Issuing & Verification</span>
+            </div>
+
+        </a>
+
+
+        <nav>
+
+            <a href="../index.html">
+                ⌂ Home
+            </a>
+
+            <a href="admin-applications.html">
+                ♙ Applications
+            </a>
+
+            <a
+                class="nav-active"
+                href="admin-certificates.html"
+            >
+                ▤ Certificates
+            </a>
+
+        </nav>
+
+
+        <a
+            class="logout"
+            href="admin-login.html"
+            onclick="localStorage.removeItem('adminToken');"
+        >
+            ↪ Logout
+        </a>
+
+    </header>
+
+
+    <main>
+
+        <div class="admin-page">
+
+            <div class="page-head">
+
+                <div>
+
+                    <div class="eyebrow">
+                        ADMIN PORTAL
+                    </div>
+
+                    <h1>
+                        Certificates
+                    </h1>
+
+                    <p>
+                        View issued credentials and manage their current
+                        validity.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <section class="card table-card">
+
+                <div class="table-top">
+
+                    <div>
+
+                        <h2>
+                            Issued certificates
+                        </h2>
+
+                        <span id="certificateCount"></span>
+
+                    </div>
+
+
+                    <div class="table-filter">
+                        All certificates ▾
+                    </div>
+
+                </div>
+
+
+                <div class="table-wrap">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Certificate ID</th>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Issued On</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="certificateRows"></tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        © 2026 CredVault · Certificate Issuing & Verification Platform
+    </footer>
+
+</div>
+
+
+<script src="../js/data.js"></script>
+<script src="../js/admin-certificates.js"></script>
+
+</body>
+</html>
